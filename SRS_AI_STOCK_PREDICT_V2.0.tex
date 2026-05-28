@@ -10,6 +10,7 @@
 \usepackage{float}
 \usepackage{needspace}
 \usepackage{graphicx}
+\usepackage{pdflscape}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T5]{fontenc}
@@ -337,7 +338,6 @@ Hệ thống Dự báo Xu hướng Giá Cổ phiếu sẽ phục vụ các nhóm
 
 \begin{enumerate}
     \renewcommand{\labelenumi}{\arabic{enumi})}
-    % Thống nhất từ gọi: Chỉ sử dụng mã cổ phiếu hoặc chứng khoán
     \item \textbf{Nhà đầu tư cá nhân}
           \begin{itemize}
               \item Người dùng quan tâm đến thị trường chứng khoán và đầu tư tài chính
@@ -348,7 +348,7 @@ Hệ thống Dự báo Xu hướng Giá Cổ phiếu sẽ phục vụ các nhóm
 
     \item \textbf{Nhà phân tích tài chính}
           \begin{itemize}
-              \item Chuyên gia hoặc cá nhân thực hiện phân tích dữ liệu tài chính và chứng khoán
+              \item Chuyên gia hoặc cá nhân thực hiện phân tích dữ liệu tài chính và cổ phiếu
               \item Có kiến thức chuyên sâu về phân tích kỹ thuật và dữ liệu thị trường
               \item Nhu cầu chính: Khai thác dữ liệu lịch sử, đánh giá mô hình AI và phân tích xu hướng giá cổ phiếu
           \end{itemize}
@@ -363,7 +363,7 @@ Hệ thống Dự báo Xu hướng Giá Cổ phiếu sẽ phục vụ các nhóm
     \item \textbf{Nhà nghiên cứu và học thuật}
           \begin{itemize}
               \item Sinh viên, giảng viên hoặc nhà nghiên cứu trí tuệ nhân tạo và tài chính
-              \item Sử dụng hệ thống để nghiên cứu mô hình học máy và dữ liệu chứng khoán
+              \item Sử dụng hệ thống để nghiên cứu mô hình học máy và dữ liệu cổ phiếu
               \item Nhu cầu chính: Thu thập dữ liệu, đánh giá thuật toán và phân tích hiệu quả dự báo
           \end{itemize}
 
@@ -510,11 +510,10 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
 \end{enumerate}
 
 \section{Yêu cầu chức năng (System Features and Functional Requirements)}
-%Chia ra theo từng nhóm đối tượng 
-% 3.1 Nhà Đầu tư 
-% 3.2 Quản trị viên
-\subsection{Quản lý Người dùng và Xác thực (User Management \& Authentication)}
-\subsubsection{Đăng ký và Quản lý Hồ sơ Nhà đầu tư}
+
+\subsection{Nhà Đầu tư (Investors)}
+
+\subsubsection{Quản lý Tài khoản và Xác thực (Account Management \& Authentication)}
 \begin{table}[htbp]
     \centering
     \renewcommand{\arraystretch}{1.3}
@@ -525,8 +524,7 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
         \hline
         \textbf{FR-01} & Hệ thống \textbf{SHALL} cho phép đăng ký/đăng nhập qua Email/Password và Google OAuth.       \\
         \hline
-        %Ghi rõ thông tin yêu cầu 
-        \textbf{FR-02} & Hệ thống \textbf{SHALL} hỗ trợ gửi email kích hoạt tài khoản (OTP/Link).                     \\
+        \textbf{FR-02} & Hệ thống \textbf{SHALL} hỗ trợ gửi email kích hoạt tài khoản qua mã OTP 6 chữ số (hiệu lực trong 15 phút) hoặc đường dẫn xác thực (link) có thời hạn 24 giờ. Hệ thống \textbf{SHALL} giới hạn tối đa 3 lần gửi lại (resend) trong vòng 1 giờ. \\
         \hline
         \textbf{FR-03} & Hệ thống \textbf{SHALL} cho phép người dùng tùy chỉnh danh mục đầu tư ưu thích (Watchlist).  \\
         \hline
@@ -535,24 +533,9 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
     \end{tabularx}
 \end{table}
 
-\subsubsection{Quản trị viên (Administrator Management)}
-\begin{table}[htbp]
-    \centering
-    \renewcommand{\arraystretch}{1.3}
-    \begin{tabularx}{\textwidth}{|l|X|}
-        \hline
-        \rowcolor{gray!10}
-        \textbf{ID}    & \textbf{Yêu cầu}                                                                                 \\
-        \hline
-        \textbf{FR-05} & Quản trị viên \textbf{SHALL} có thể xem, khóa (ban), hoặc vô hiệu hóa tài khoản người dùng.      \\
-        \hline
-        \textbf{FR-06} & Hệ thống \textbf{SHALL} lưu trữ Audit Log cho mọi hành động thay đổi cài đặt hệ thống của Admin. \\
-        \hline
-    \end{tabularx}
-\end{table}
+\subsubsection{Tra cứu Thông tin và Biểu đồ (Stock Data \& Charting)}
 
-\subsection{Tra cứu Thông tin và Biểu đồ (Stock Data \& Charting)}
-\subsubsection{Tìm kiếm và Lọc dữ liệu}
+\noindent\textit{Tìm kiếm và Lọc dữ liệu}
 \begin{table}[htbp]
     \centering
     \renewcommand{\arraystretch}{1.3}
@@ -568,7 +551,7 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
     \end{tabularx}
 \end{table}
 
-\subsubsection{Biểu đồ phân tích kỹ thuật}
+\noindent\textit{Biểu đồ phân tích kỹ thuật}
 \begin{table}[htbp]
     \centering
     \renewcommand{\arraystretch}{1.3}
@@ -584,15 +567,12 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
     \end{tabularx}
 \end{table}
 
-\subsection{Hệ thống Dự báo bằng Trí tuệ Nhân tạo (AI-Driven Prediction System)}
-
 \Needspace{12\baselineskip}
-\subsubsection{Luồng dự báo và Khuyến nghị}
+\subsubsection{Dự báo bằng Trí tuệ Nhân tạo (AI-Driven Prediction)}
 
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.3}
-
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor{gray!10}
@@ -605,16 +585,50 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
         \textbf{FR-13} & Hệ thống \textbf{SHOULD} cung cấp tính năng "Khả năng giải thích" (Explainability) bằng cách liệt kê top 3 chỉ báo kỹ thuật ảnh hưởng lớn nhất đến dự báo hiện tại. \\
         \hline
     \end{tabularx}
-
 \end{table}
 
 \Needspace{10\baselineskip}
-\subsubsection{Quản lý và Đánh giá Mô hình (AI Model Management)}
+\subsubsection{Thông báo (Notifications)}
 
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor{gray!10}
+        \textbf{ID}    & \textbf{Yêu cầu}                                                                                                                           \\
+        \hline
+        \textbf{FR-16} & Hệ thống \textbf{SHALL} cung cấp thông báo In-app (Quả chuông) khi có dự báo biến động mạnh đối với các mã trong Watchlist của người dùng. \\
+        \hline
+        \textbf{FR-17} & Hệ thống \textbf{SHOULD} hỗ trợ gửi Email tổng hợp (Daily Digest) về nhận định thị trường.                                                 \\
+        \hline
+    \end{tabularx}
+\end{table}
 
+\subsection{Quản trị viên (Administrators)}
+
+\subsubsection{Quản lý Người dùng (User Management)}
+\begin{table}[htbp]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor{gray!10}
+        \textbf{ID}    & \textbf{Yêu cầu}                                                                                 \\
+        \hline
+        \textbf{FR-05} & Quản trị viên \textbf{SHALL} có thể xem, khóa (ban), hoặc vô hiệu hóa tài khoản người dùng.      \\
+        \hline
+        \textbf{FR-06} & Hệ thống \textbf{SHALL} lưu trữ Audit Log cho mọi hành động thay đổi cài đặt hệ thống của Admin. \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+\Needspace{10\baselineskip}
+\subsubsection{Quản lý và Đánh giá Mô hình AI (AI Model Management)}
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor{gray!10}
@@ -627,18 +641,14 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
         \textbf{MLR-03} & Admin \textbf{SHALL} có khả năng kích hoạt thủ công tiến trình huấn luyện lại mô hình (Trigger Retraining) từ Dashboard.             \\
         \hline
     \end{tabularx}
-
 \end{table}
 
-\subsection{Tích hợp Hệ thống Bên ngoài (Integration with External Systems)}
-
 \Needspace{10\baselineskip}
-\subsubsection{API Dữ liệu Chứng khoán}
+\subsubsection{Tích hợp Dữ liệu Cổ phiếu (Stock Data Integration)}
 
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.3}
-
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor{gray!10}
@@ -649,29 +659,6 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
         \textbf{FR-15} & Hệ thống \textbf{SHOULD} xử lý lỗi tự động (Retry mechanism) nếu API bên thứ 3 bị timeout.        \\
         \hline
     \end{tabularx}
-
-\end{table}
-
-\subsection{Hệ thống Thông báo và Báo cáo (Notification \& Reporting)}
-
-\Needspace{10\baselineskip}
-\subsubsection{Thông báo (Notifications)}
-
-\begin{table}[H]
-    \centering
-    \renewcommand{\arraystretch}{1.3}
-
-    \begin{tabularx}{\textwidth}{|l|X|}
-        \hline
-        \rowcolor{gray!10}
-        \textbf{ID}    & \textbf{Yêu cầu}                                                                                                                           \\
-        \hline
-        \textbf{FR-16} & Hệ thống \textbf{SHALL} cung cấp thông báo In-app (Quả chuông) khi có dự báo biến động mạnh đối với các mã trong Watchlist của người dùng. \\
-        \hline
-        \textbf{FR-17} & Hệ thống \textbf{SHOULD} hỗ trợ gửi Email tổng hợp (Daily Digest) về nhận định thị trường.                                                 \\
-        \hline
-    \end{tabularx}
-
 \end{table}
 
 \Needspace{10\baselineskip}
@@ -680,7 +667,6 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.3}
-
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor{gray!10}
@@ -691,7 +677,6 @@ Các tài liệu hướng dẫn sử dụng sẽ được phát triển kèm the
         \textbf{FR-19} & Hệ thống \textbf{SHALL} xuất báo cáo hiệu suất mô hình (F1-Score, Precision, Recall) dưới dạng file CSV/Excel cho Admin. \\
         \hline
     \end{tabularx}
-
 \end{table}
 \section{Yêu cầu Giao diện Bên ngoài (External Interface Requirements)}
 
@@ -1344,11 +1329,10 @@ Hệ thống SHALL cung cấp tài liệu và chương trình đào tạo phù h
           \begin{itemize}
               \item Biểu đồ Use Case Nhà đầu tư
           \end{itemize}
-          \begin{figure}[htbp]
+          \begin{figure}[H]
               \centering
-              \includegraphics[width=1\textwidth]{images/investor-use-case.png}
+              \includegraphics[width=0.9\textwidth]{images/investor-use-case.png}
           \end{figure}
-          % use case lệch
           \newpage
 
           \begin{itemize}
@@ -1356,21 +1340,28 @@ Hệ thống SHALL cung cấp tài liệu và chương trình đào tạo phù h
           \end{itemize}
           \begin{figure}[htbp]
               \centering
-              \includegraphics[width=0.8\textwidth]{images/admin-use-case.png}
+              \includegraphics[width=0.9\textwidth]{images/admin-use-case.png}
           \end{figure}
 
           \begin{itemize}
               \item Database
           \end{itemize}
-          \begin{figure}[htbp]
+          \begin{landscape}
+          \begin{figure}[H]
               \centering
-              \includegraphics[width=0.8\textwidth]{images/database.png}
+              \includegraphics[width=1\linewidth]{images/database.png}
           \end{figure}
-          %Thiếu System User
-          %Tách bảng users ra riêng 
+          \end{landscape}
           \clearpage
-          %Giao diện mẫu
-          %Bổ sung thêm thông tin 
+
+          \begin{itemize}
+              \item Luồng điều hướng giao diện người dùng (UI Flow)
+          \end{itemize}
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.85\textwidth]{images/ui-flow.png}
+          \end{figure}
+
 \end{enumerate}
 
 \section{Phụ lục B: Danh sách các vấn đề cần giải quyết (Issues List)}
