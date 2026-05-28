@@ -1,0 +1,83 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{Thuật ngữ và Định nghĩa (Glossary)}{4}{Doc-Start}%
+\contentsline {section}{\numberline {1}Giới thiệu (Introduction)}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Mục đích (Purpose)}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Quy ước tài liệu (Document Conventions)}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Đối tượng tiếp nhận (Intended Audience)}{5}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Mô tả tổng quan (Overall Description)}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Phối cảnh sản phẩm (Product Perspective)}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Chức năng sản phẩm}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Lớp người dùng, đặc điểm và nhu cầu}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Môi trường vận hành}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Ràng buộc thiết kế và triển khai}{9}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Tài liệu hướng dẫn người dùng}{10}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Giả định và phụ thuộc}{10}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Yêu cầu chức năng (System Features and Functional Requirements)}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Quản lý Người dùng và Xác thực (User Management \& Authentication)}{11}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Đăng ký và Quản lý Hồ sơ Nhà đầu tư}{11}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Quản trị viên (Administrator Management)}{11}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Tra cứu Thông tin và Biểu đồ (Stock Data \& Charting)}{12}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Tìm kiếm và Lọc dữ liệu}{12}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Biểu đồ phân tích kỹ thuật}{12}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Hệ thống Dự báo bằng Trí tuệ Nhân tạo (AI-Driven Prediction System)}{12}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Luồng dự báo và Khuyến nghị}{12}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Quản lý và Đánh giá Mô hình (AI Model Management)}{13}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Tích hợp Hệ thống Bên ngoài (Integration with External Systems)}{13}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}API Dữ liệu Chứng khoán}{13}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}Hệ thống Thông báo và Báo cáo (Notification \& Reporting)}{13}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Thông báo (Notifications)}{13}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Báo cáo Thống kê (Reporting)}{13}{subsubsection.3.5.2}%
+\contentsline {section}{\numberline {4}Yêu cầu Giao diện Bên ngoài (External Interface Requirements)}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Giao diện Người dùng (User Interfaces)}{14}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Nhà đầu tư (Investors)}{14}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Quản trị viên (Administrators)}{14}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Người dùng Khách (Guest Users)}{14}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Giao diện Phần cứng (Hardware Interfaces)}{15}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Hạ tầng Máy chủ (Server Infrastructure)}{15}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Hạ tầng Mạng (Network Infrastructure)}{15}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Thiết bị Người dùng (Client Devices)}{15}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.3}Giao diện Phần mềm (Software Interfaces)}{16}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}API Dữ liệu Chứng khoán}{16}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Hệ thống AI và Machine Learning}{16}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Dịch vụ Email và Thông báo}{16}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Công cụ Phân tích và Báo cáo}{16}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}Giao diện Truyền thông (Communication Interfaces)}{16}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Giao thức Mạng (Network Protocols)}{17}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Giao tiếp API (API Communications)}{17}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Định dạng Trao đổi Dữ liệu (Data Exchange Formats)}{17}{subsubsection.4.4.3}%
+\contentsline {section}{\numberline {5}Yêu cầu Phi Chức năng (Non-Functional Requirements)}{17}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Yêu cầu Hiệu năng (Performance Requirements)}{18}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Thời gian Phản hồi (Response Time)}{18}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Thông lượng (Throughput)}{18}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Khả năng Sử dụng Tài nguyên (Resource Utilization)}{19}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Yêu cầu Bảo mật (Security Requirements)}{19}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Xác thực và Phân quyền (Authentication and Authorization)}{19}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Bảo vệ Dữ liệu (Data Protection)}{19}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}Độ Tin cậy và Khả dụng (Reliability and Availability)}{20}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Tính Khả dụng (Availability)}{20}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Khả năng Phục hồi (Disaster Recovery)}{20}{subsubsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.4}Khả năng Sử dụng và Truy cập (Usability and Accessibility)}{20}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Giao diện Người dùng (User Interface)}{20}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Khả năng Truy cập (Accessibility)}{21}{subsubsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.5}Khả năng Bảo trì và Mở rộng (Maintainability and Scalability)}{21}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Khả năng Tương thích (Compatibility Requirements)}{21}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Yêu cầu Vận hành và Giám sát (Operational Requirements)}{22}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Các Yêu cầu Khác (Other Requirements)}{22}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Yêu cầu Di chuyển Dữ liệu (Data Migration)}{22}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Ánh xạ và Chuyển đổi Dữ liệu (Data Mapping and Transformation)}{22}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Quy trình Di chuyển Dữ liệu (Migration Process)}{22}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Làm sạch Dữ liệu (Data Cleansing)}{22}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Yêu cầu Quốc tế hóa (Internationalization Requirements)}{23}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Framework Địa phương hóa (Localization Framework)}{23}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Thích ứng Văn hóa (Cultural Adaptations)}{23}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Thiết lập Khu vực (Regional Settings)}{23}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Yêu cầu Đào tạo (Training Requirements)}{23}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Đào tạo Quản trị viên (Administrator Training)}{23}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Đào tạo Người dùng Cuối (End-User Training)}{24}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Hình thức Đào tạo (Training Delivery)}{24}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}Phụ lục A: Mô hình phân tích }{24}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Phụ lục B: Danh sách các vấn đề cần giải quyết (Issues List)}{32}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Tích hợp nguồn dữ liệu (Data Integration)}{32}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Kiến trúc triển khai hệ thống (Deployment Architecture)}{32}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Thu thập và xử lý dữ liệu (Data Collection \& Processing)}{32}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Lựa chọn mô hình học máy (Machine Learning Model Selection)}{32}{subsection.7.4}%

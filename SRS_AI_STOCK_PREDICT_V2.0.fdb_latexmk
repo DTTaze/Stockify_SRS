@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1778813337.81981 "c:/Users/This PC/Documents/PARA Method/Project/Stockify_SRS/main.tex" "main.pdf" "main" 1778813342.87726 0
+["pdflatex"] 1779956472.94664 "c:/Users/This PC/Documents/PARA Method/Project/Stockify_SRS/SRS_AI_STOCK_PREDICT_V2.0.tex" "SRS_AI_STOCK_PREDICT_V2.0.pdf" "SRS_AI_STOCK_PREDICT_V2.0" 1779956478.16775 0
   "C:/Users/This" 1778306456 12725 90d80a42565f31db0b57f4c0b7c93805 ""
   "C:/Users/This PC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778795864 88371 b965f57369ed322039596060d18f4416 ""
   "C:/Users/This PC/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1778763775 14064 487466df3fd2009885e7110b5e0a001e ""
@@ -156,8 +156,12 @@
   "C:/Users/This PC/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.def" 1368738347 21986 ccb3b8f7cc27fbd61b3daabbbb82ad3f ""
   "C:/Users/This PC/AppData/Local/Programs/MiKTeX/tex/latex/vntex/t5enc.dfu" 1368738347 13949 387dd4fa58aea5f873839c93430fffed ""
   "C:/Users/This PC/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
+  "SRS_AI_STOCK_PREDICT_V2.0.aux" 1779956477 13378 b5531a3defeb9ab660ac43fb2cfb7ba5 "pdflatex"
+  "SRS_AI_STOCK_PREDICT_V2.0.out" 1779956477 24528 845c41d864c3c06b2075441d640f2005 "pdflatex"
+  "SRS_AI_STOCK_PREDICT_V2.0.tex" 1779956472 66839 4f9703d854d571ba6f21c45771c75665 ""
+  "SRS_AI_STOCK_PREDICT_V2.0.toc" 1779956477 9745 fc52f818bbd7818e0dfa643c4641271c "pdflatex"
   "c:/Users/This" 1778306456 12725 90d80a42565f31db0b57f4c0b7c93805 ""
-  "c:/Users/This PC/Documents/PARA Method/Project/Stockify_SRS/main.tex" 1778813338 65476 5eb736e15201fff852e256ec9351f7a6 ""
+  "c:/Users/This PC/Documents/PARA Method/Project/Stockify_SRS/SRS_AI_STOCK_PREDICT_V2.0.tex" 1779956472 66839 4f9703d854d571ba6f21c45771c75665 ""
   "images/AI-engine-component-diagram.png" 1778763224 1293613 065c055d518935454edb34d01420ffb9 ""
   "images/admin-use-case.png" 1778795967 750222 0eef262bd3fbd00c7986991a054200d5 ""
   "images/context-diagram.png" 1778763224 434348 5dd91177d25d77039007c4d9b7f2301f ""
@@ -166,14 +170,10 @@
   "images/investor-use-case.png" 1778795708 597200 365314fe1964d617c8faef9a93cb8966 ""
   "images/process-flow.png" 1778763224 706654 ac28a1ca1b0b589ae98076628d26ae8d ""
   "images/registration-flow.png" 1778763224 1342473 ff713a797725f931e4d3121a27a10a50 ""
-  "main.aux" 1778813342 13378 b5531a3defeb9ab660ac43fb2cfb7ba5 "pdflatex"
-  "main.out" 1778813342 24528 845c41d864c3c06b2075441d640f2005 "pdflatex"
-  "main.tex" 1778813338 65476 5eb736e15201fff852e256ec9351f7a6 ""
-  "main.toc" 1778813342 9745 fc52f818bbd7818e0dfa643c4641271c "pdflatex"
   (generated)
-  "main.aux"
-  "main.log"
-  "main.out"
-  "main.pdf"
-  "main.toc"
+  "SRS_AI_STOCK_PREDICT_V2.0.aux"
+  "SRS_AI_STOCK_PREDICT_V2.0.log"
+  "SRS_AI_STOCK_PREDICT_V2.0.out"
+  "SRS_AI_STOCK_PREDICT_V2.0.pdf"
+  "SRS_AI_STOCK_PREDICT_V2.0.toc"
   (rewritten before read)
